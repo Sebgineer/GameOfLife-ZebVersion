@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeb Game of Life Copi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="gamescript.js"></script>
+</head>
+<body onload="startGame()">
+    <!--Edit Size-->
+    <div class="LeftTopCroner">
+        <div class="pill">
+            <h1>Game Options</h1>
+        </div>
+        <button onclick="SetOnPlay(true)">Start Simulation</button>
+        <button onclick="SetOnPlay(false)">Pause Simulation</button>
+        <button onclick="next = true">Next Frame</button>
+    </div>
+    <div class="LeftDownCroner">
+        <div class="pill">
+            <h1>Canvas Size</h1>
+        </div>
+        <button onclick="setCanvasSize(720, 1280)">1280x720p</button>
+        <button onclick="setCanvasSize(480, 720)">720x480p</button>
+        <button onclick="setCanvasSize(360, 640)">640x360p</button>
+    </div>
+    <div class="RigthTopCroner">
+        <div class="pill">
+            <h1>Cell Size</h1>
+        </div>
+        <button onclick="SetCellSize(10)">10x10p</button>
+        <button onclick="SetCellSize(20)">20x20p</button>
+    </div>
+    <div class="RigthDownCroner">
+        <div class="pill">
+            <h1>Cell Color</h1>
+        </div>
+        <p>
+            Cell Color #<br>
+            <input class="textInput" id="CellColor" type="text" placeholder="Color hex" oninput="ChangeCellColor('CellColor')" value="000000">
+        </p>
+        <p>
+            Background Color #
+            <br><input class="textInput" id="BgColor" type="text" placeholder="Color hex" oninput="ChangeBgColor('BgColor')" value="ffffff">
+        </p>
+    </div>
+</body>
+</html>

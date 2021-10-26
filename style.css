@@ -1,0 +1,106 @@
+@font-face {
+    font-family: Cell_Font;
+    src: url("Cell_63.ttf");
+}
+
+html, body {
+    background-image: url("img/science-lab.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Cell_Font;
+}
+
+canvas {
+    top: 10%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px gray solid;
+    border-right: 1px gray solid;
+    box-shadow: 0px 0px 2px 0px black;
+}
+
+.RigthDownCroner {
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 15%;
+    height: 25%;
+    background-image: url(img/pap.png);
+    background-size: cover;
+}
+
+.RigthTopCroner {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 15%;
+    height: 25%;
+    background-image: url(img/pap.png);
+    background-size: cover;
+}
+
+.LeftDownCroner {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 15%;
+    height: 25%;
+    background-image: url(img/pap.png);
+    background-size: cover;
+}
+
+.LeftTopCroner {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 15%;
+    height: 25%;
+    background-image: url(img/pap.png);
+    background-size: cover;
+}
+
+.pill {
+    background-image: url("img/Pill.png");
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 90px;
+    background-size: 100% 100%;
+}
+
+.pill h1 {
+    position: relative;
+    text-align:center;
+    margin: 0;
+    padding: 30px 0px;
+}
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(135, 221, 250);
+    font-size: 18px;
+    border-radius: 18px;
+    padding: 5px 10px;
+}
+
+.textInput {
+    background-color: rgb(135, 221, 250);
+    font-size: 18px;
+    border-radius: 18px;
+    width: 100px;
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+}
